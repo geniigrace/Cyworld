@@ -5,4 +5,6 @@ public class PhotoService {
     String id;
 
     String name;
+
+    String address;
 }
