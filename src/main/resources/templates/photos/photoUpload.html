@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout2}">
+
+<th:block layout:fragment="css">
+    <link rel="stylesheet" href="/css/photo.css">
+</th:block>
+
+<div layout:fragment="content">
+    <div class="wrapper">
+        <div class="wrapper_header">
+            <div class="content___title">
+                <div class="title">Photo</div>
+                <div class="subtitle">Today's photo record.</div>
+            </div>
+            <div class="divideLine"></div>
+        </div>
+        <form role="form" method="post" action="/photo/photoUpload">
+            <select class="input-tag">
+                <option value="">고등학교</option>
+                <option value="">중학교</option>
+            </select>
+            <div>
+                <input class="input-tag" type="text" placeholder="제목">
+            </div>
+            <div class="title">
+                <input type="text" class="textArea" placeholder="내용">
+            </div>
+
+            <div>
+                <label class="custom-file-label"></label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</html>

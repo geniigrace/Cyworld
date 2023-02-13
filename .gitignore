@@ -1,0 +1,13 @@
+### Files ###
+*.zip
+*.pptx
+*.jpg
+*.gif
+*.jpeg
+*.cmd
+*.iml
+
+/.idea/
+/.mvn/
+/.vscode/
+/Users/jgraceyeom/workspace/TeamProject/CyWorld/src/main/resources/application.properties
