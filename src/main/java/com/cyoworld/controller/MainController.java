@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequiredArgsConstructor
 public class MainController {
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/home")
     public String main(){
 
-        return "main";
+        return "/home";
     }
 
 }
