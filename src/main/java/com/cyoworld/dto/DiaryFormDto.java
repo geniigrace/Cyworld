@@ -1,7 +1,7 @@
 package com.cyoworld.dto;
 
 public class DiaryFormDto {
-
+   //구분자 
    private Long id;
 
    private String diaryTitle;
