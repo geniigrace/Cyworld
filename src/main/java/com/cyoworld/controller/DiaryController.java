@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class profileController {
+public class DiaryController {
 
-    @GetMapping(value= "/profile")
-    public String profile(){
+    @GetMapping(value= "/diary")
+    public String diary(){
 
-        return "profile/profileDtl";
+        return "diary/diaryDtl";
     }
-
 }
