@@ -25,7 +25,8 @@ public class Diary extends BaseTimeEntity{
     @Column(name = "diary_content", nullable = false)
     private String diaryContent;
 
-    @OneToMany(fetch = FetchType.LAZY)
+//    @OneToMany(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private Member member;
 
