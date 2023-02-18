@@ -1,5 +1,32 @@
-C:\Users\min\Desktop\megazonit\Team Project\CyWorld\src\main\java\com\cyoworld\controller\SettingController.java
-C:\Users\min\Desktop\megazonit\Team Project\CyWorld\src\main\java\com\cyoworld\CyWorldApplication.java
-C:\Users\min\Desktop\megazonit\Team Project\CyWorld\src\main\java\com\cyoworld\controller\BookmarkController.java
-C:\Users\min\Desktop\megazonit\Team Project\CyWorld\src\main\java\com\cyoworld\controller\GuestbookController.java
-C:\Users\min\Desktop\megazonit\Team Project\CyWorld\src\main\java\com\cyoworld\controller\mainController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\PhotoController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\ProfileController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\SettingController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\Service\DiaryService.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\dto\PhtoImgDto.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\dto\SettingManageMenuDto.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\PhotoImg.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\BookmarkController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\CyWorldApplication.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\config\CustomAuthenticationEntryPoint.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\Service\SettingService.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\BaseTimeEntity.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\repository\MemberRepository.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\config\AuditorAwareImpl.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\Service\PhotoService.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\GuestbookController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\Member.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\repository\SettingRepository.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\constant\SettingStatus.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\config\AuditConfig.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\DiaryController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\SettingMenu.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\dto\DiaryFormDto.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\LoginController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\Service\MemberService.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\Diary.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\config\SecurityConfig.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\constant\Gender.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\dto\MemberFormDto.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\HomeController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\controller\VideoController.java
+C:\spring_CyWorld_Github\TeamProject_cyworld\src\main\java\com\cyoworld\entity\BaseEntity.java
