@@ -9,11 +9,20 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "photoImg")
-public class PhotoImg {
+public class PhotoImg extends BaseTimeEntity{
     @Id
     @Column(name="imgId")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column(name="titleName")
+    private String title;
+
+    @Column(name="category")
+    private String category;
+
+    @Column(name="detail")
+    private String detail;
 
     private String imgName; //이미지 파일명
 
@@ -21,13 +30,11 @@ public class PhotoImg {
 
     private String imgUrl; //이미지 조회 경로
 
-    private String repimgYn; //대표 이미지 여부
+//    @OneToMany(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "member_userId")
+//    private Member member;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "item_id")
-    private Member member;
-
-    public void updateItemImg(String oriImgName, String imgName, String imgUrl){
+    public void updatePhotoImg(String oriImgName, String imgName, String imgUrl){
         this.oriImgName = oriImgName;
         this.imgName = imgName;
         this.imgUrl = imgUrl;

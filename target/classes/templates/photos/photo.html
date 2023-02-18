@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout2}">
+
+<th:block layout:fragment="css">
+<link rel="stylesheet" href="/css/photo.css">
+</th:block>
+
+<div layout:fragment="content">
+        <div class="wrapper">
+            <div style="display: flex">
+            <div id="photo"></div>
+
+            <div class="wrapper__left__body">
+                <p>카테고리</p>
+
+                <th>
+                    <tr>
+
+                    </tr>
+                </th>
+
+                <div class="left__footer" onclick="location.href='photo/photoUpload'">사진등록 <i
+                        class="fas fa-caret-right arrow"></i></div>
+            </div>
+
+            <form role="form" method="post">
+                <div>
+                    <div>
+                        <input class="input-tag" type="text" placeholder="제목">
+                    </div>
+                    <div>
+                        <input type="text" class="textArea" placeholder="내용">
+                    </div>
+                    <div>
+                        <input class="input-tag" type="text" placeholder="댓글">
+                    </div>
+
+                    <div class="input-tag">
+                        <img th:src="@{/img/abcd.jpg}" alt="photo">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</html>
