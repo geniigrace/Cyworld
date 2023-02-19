@@ -17,7 +17,7 @@ import javax.persistence.EntityNotFoundException;
 public class PhotoService {
 
 
-    @Value("${itemImgLocation}")
+    @Value("${imgLocation}")
     private String photoImgLocation;
 
     private final PhotoImgRepository photoImgRepository;
