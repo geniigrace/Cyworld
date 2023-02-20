@@ -10,6 +10,9 @@
         body {
             background-color: lightblue;
         }
+        .error {
+            color: #bd2130;
+        }
     </style>
 </head>
 
@@ -22,19 +25,23 @@
         <table>
             <tr>
                 <td>아이디</td>
-                <!--                    <label for="inputID">아이디</label>-->
-                <td><input type="text" placeholder="ID" id="inputID"></td>
+                <td><input type="text" name="userId" placeholder="ID" id="userId"></td>
             </tr>
             <tr>
                 <td>비밀번호</td>
-                <!--                    <label for="inputPW">비밀번호</label>-->
-                <td><input type="password" placeholder="PASSWORD" id="inputPW"></td>
+                <td><input type="password" name="password" placeholder="PASSWORD" id="password"></td>
+            </tr>
+            <tr th:if="${loginErrorMsg}">
+                <td th:if="${loginErrorMsg}" colspan="2">
+                    <p th:if="${loginErrorMsg}" class="error" th:text="${loginErrorMsg}"></p>
+                </td>
             </tr>
         </table>
 
         <div id="loginBtns">
-            <button type="submit">로그인</button>
+            <button>로그인</button>
             <button type="button" onClick="location.href='/login/register'">회원가입</button>
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
         </div>
     </form>
 </div>

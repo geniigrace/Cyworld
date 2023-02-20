@@ -18,7 +18,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/")
+                .defaultSuccessUrl("/home")
                 .usernameParameter("userId")
                 .failureUrl("/login/error")
                 .and()
@@ -29,12 +29,11 @@ public class SecurityConfig {
 
         http.authorizeRequests()
                 .mvcMatchers("/css/**", "/js/**", "/img/**").permitAll()
-//                .mvcMatchers("/", "/members/**", "/item/**", "/images/**","/notice/**").permitAll()
-//                .mvcMatchers("/admin/**").hasRole("ADMIN")
-//                .mvcMatchers("/user/**").hasRole("USER")
-                .mvcMatchers("/login", "/login/register").permitAll()
-                .mvcMatchers("/", "/{userId}/**").permitAll()
-                .anyRequest().permitAll()
+                .mvcMatchers("/login", "/login/register", "/login/error").permitAll()
+                .mvcMatchers("/home", "/{userId}/**").permitAll()
+//                .mvcMatchers("").authenticated()
+//                .anyRequest().permitAll()
+                .anyRequest().authenticated()
         ;
 
         http.exceptionHandling()

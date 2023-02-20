@@ -1,6 +1,7 @@
 package com.cyoworld.entity;
 
 import com.cyoworld.constant.Gender;
+import com.cyoworld.constant.Role;
 import com.cyoworld.dto.MemberFormDto;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,6 +39,8 @@ public class Member extends BaseEntity {
 
     private Gender gender;
 
+    private Role role;
+
     public static Member createMember(MemberFormDto memberFormDto, PasswordEncoder passwordEncoder){
         Member member = new Member();
         member.setUserId(memberFormDto.getUserId());
@@ -50,6 +53,7 @@ public class Member extends BaseEntity {
         member.setAddress(memberFormDto.getAddress());
         member.setPassword(password);
         member.setGender(memberFormDto.getGender());
+        member.setRole(Role.USER);
         return member;
     }
 
