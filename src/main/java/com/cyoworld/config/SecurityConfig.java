@@ -29,7 +29,7 @@ public class SecurityConfig {
 
         http.authorizeRequests()
                 .mvcMatchers("/css/**", "/js/**", "/img/**").permitAll()
-                .mvcMatchers("/login", "/login/register", "/login/error").permitAll()
+                .mvcMatchers("/", "/login", "/login/register", "/login/error").permitAll()
                 .mvcMatchers("/home", "/{userId}/**").permitAll()
 //                .mvcMatchers("").authenticated()
 //                .anyRequest().permitAll()

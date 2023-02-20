@@ -1,9 +1,11 @@
 package com.cyoworld.controller;
 
 import com.cyoworld.Service.MemberService;
+import com.cyoworld.Service.SettingMenuService;
 import com.cyoworld.constant.Gender;
 import com.cyoworld.dto.MemberFormDto;
 import com.cyoworld.entity.Member;
+import com.cyoworld.entity.SettingMenu;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @Controller
 @RequiredArgsConstructor
@@ -21,6 +24,13 @@ public class LoginController {
     private final MemberService memberService;
 
     private final PasswordEncoder passwordEncoder;
+
+    private final SettingMenuService settingMenuService;
+
+    @GetMapping(value = "/")
+    public String loginPageFromRoot(){
+        return "redirect:/login";
+    }
 
     @GetMapping(value = "/login")
     public String loginPage(){
@@ -61,6 +71,8 @@ public class LoginController {
         try {
             Member member = Member.createMember(memberFormDto, passwordEncoder);
             memberService.saveMember(member);
+            SettingMenu settingMenu = SettingMenu.createSettingMenu(member);
+            settingMenuService.saveSettingMenu(settingMenu);
         } catch (IllegalStateException e){
             model.addAttribute("errorMessage", e.getMessage());
             return "/member/register";

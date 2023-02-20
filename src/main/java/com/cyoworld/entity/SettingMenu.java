@@ -37,6 +37,7 @@ public class SettingMenu {
     public static SettingMenu createSettingMenu(Member member){
         SettingMenu settingMenu = new SettingMenu();
         settingMenu.setMember(member);
+
         settingMenu.setAlbumPhoto(SettingStatus.ON);
         settingMenu.setAlbumVideo(SettingStatus.ON);
         settingMenu.setBoard(SettingStatus.ON);

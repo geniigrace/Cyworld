@@ -13,9 +13,9 @@ import javax.persistence.Id;
 @Setter
 public class SettingManageMenuDto {
 
-    @Id
-    @Column(name = "userSettingCode")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Id
+//    @Column(name = "userSettingCode")
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private SettingStatus albumPhoto;
